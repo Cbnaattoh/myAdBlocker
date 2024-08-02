@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>myAdBlocker Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        color: #333;
+      }
+
+      #siteInput {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+      }
+
+      #addSiteButton {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+        margin-bottom: 10px;
+      }
+
+      #addSiteButton:hover {
+        background-color: #45a049;
+      }
+
+      #siteList {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .site-item {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .remove-button {
+        background-color: #f44336; /* Red background color */
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9em;
+        transition: background-color 0.3s;
+      }
+
+      .remove-button:hover {
+        background-color: #e53935; /* Darker red on hover */
+      }
+
+      .notice {
+        color: #f44336; /* Red color */
+        font-style: italic;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Manage Blocked Sites</h1>
+      <input
+        type="text"
+        id="siteInput"
+        placeholder="Enter site to be blocked"
+      />
+      <button id="addSiteButton">Add Site</button>
+      <ul id="siteList">
+        <!-- Example site item, dynamically added by JavaScript -->
+        <!-- <li class="site-item">
+          example.com
+          <button class="remove-button" onclick="removeSiteFromBlockList('example.com')">Remove</button>
+        </li> -->
+      </ul>
+      <p class="notice">
+        Websites listed here are blocked when the ad blocker is active!!!
+      </p>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

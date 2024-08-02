@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "myAdBlocker",
+  "version": "1.0",
+  "description": "Mini project - A simple ad blocker",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.js"
+      }
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/image_16x16.png",
+      "48": "images/image_48x48.png",
+      "128": "images/image_128x128.png"
+    }
+  },
+  "icons": {
+    "16": "images/image_16x16.png",
+    "48": "images/image_48x48.png",
+    "128": "images/image_128x128.png"
+  },
+  "options_page": "options.html"
+}

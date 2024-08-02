@@ -1,0 +1,8 @@
+- Open chrome browser and go to extensions.
+- Enable developer mode.
+- Click on load unpacked.
+- Select the "MyAdBlocker" folder
+- Toggle the estensions.
+- Start browsing. 
+-If you encounter any ad, right-click on the ad and the click on "Block this ad" .  The link to the ad's website is then listed in the list of blocked sites.
+-Right-click on the AdBlocker extension and choose options to manage the list of blocked sites.
